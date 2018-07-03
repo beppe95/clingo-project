@@ -1,0 +1,21 @@
+"statistica | 2 | f","cmro | 1 | a
+logica | 3 | f","logica | 3 | a
+mdl | 1 | c","reti | 3 | d
+cmro | 1 | e","mdl | 1 | c
+reti | 3 | d"
+"cmro | 1 | c","cmro | 1 | c","cmro | 1 | b","cmro | 1 | b
+logica | 3 | d","reti | 3 | a
+cmro | 1 | b"
+"cmro | 1 | b
+logica | 3 | c","cmro | 1 | d
+reti | 3 | e","cmro | 1 | d
+reti | 3 | f","mdl | 1 | c
+reti | 3 | d","lft | 2 | b
+reti | 3 | c"
+"cmro | 1 | b
+statistica | 2 | d
+reti | 3 | e","cmro | 1 | a","cmro | 1 | a
+logica | 3 | d
+fisica | 2 | e","cmro | 1 | b
+lft | 2 | c","inglese | 1 | a
+lft | 2 | e"
