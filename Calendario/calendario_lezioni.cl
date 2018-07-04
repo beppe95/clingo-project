@@ -83,7 +83,7 @@ slot_CFU_corretti :- conteggio_slot(Corso, Conteggio), insegnamento(_, Corso, _,
 :- slot(Giorno, Aula1, _, _, Corso, Semestre, Docente, _), slot(Giorno, Aula2, _, _, Corso, Semestre, Docente, _),
     Aula1 != Aula2.
 
-% Un corso che compare più di una volta nello stesso giorno, deve avere orari consecutivi
+% Ogni giorno una materia può apparire solo 2 volte
 conteggioMateriaPerGiorno(Conteggio, Corso, Giorno) :-
     Conteggio = #count{ Inizio, Fine : slot(Giorno, _, Inizio, Fine, Corso, Semestre, Docente, _) },
     slot(Giorno, _, _, _, Corso, _, Docente, _).
