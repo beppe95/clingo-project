@@ -1,3 +1,5 @@
 clingo-ui/.gradle/
 clingo-ui/.idea/
 clingo-ui/build/
+*.iml
+clingo-ui/*.iml
