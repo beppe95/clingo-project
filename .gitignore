@@ -3,3 +3,4 @@ clingo-ui/.idea/
 clingo-ui/build/
 *.iml
 clingo-ui/*.iml
+.idea/
