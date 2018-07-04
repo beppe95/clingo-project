@@ -1,0 +1,30 @@
+Un programma logico può essere organizzato in più sottoprogrammi.
+
+Per iniziare un nuovo sottoprogramma, scriviamo una dichiarazione
+    #program p(s1,...,sn).
+Dove p è il nome del sottoprogramma, e i parametri sono costanti.
+Se n è zero, allora le parentesi possono essere omesse.
+Tutte le regole, le dichiarazioni esterle, e dichiarazioni show
+fino alla prossima dichiarazione #program o alla fine del file, appartengono al sottoprogramma p/n.
+
+Le regole non soggette ad alcuna direttiva sono incluse nel sottoprogramma 0/base.
+
+Il comportamento di default è di unificare e risolvere quest'ultimo.
+Le occorrenze di costanti che sono parametri di un sottoprogramma sono unificate con termini ground all'istanziazione del sottoprogramma.
+
+
+Approccio Incremental ASP Solving
+
+La nostra codifica per la pianificazione del mondo dei blocchi per clingo utilizza le direttive #program per definire i sottoprogrammi
+- base/0, conoscenza iniziale istanziata al passaggio zero,
+- step/1 (t), modello di transizioni di stato istanziata per i passi t > 0,
+- check/1 (t), controllo di obiettivo e vincoli di stato istanziata per passi t ≥ 0.
+
+L'atomo query(t), fornito nella modalità incrementale, permette l'interrogazione della base di conoscenza e risulta vero solo
+per l'ultimo valore di t generato, e falso per tutti i precedenti.
+
+
+Fonti
+https://potassco.org/clingo/run/
+Potassco User Guide
+Reasoning Web - Semantic Interoperability on the Web (2017)

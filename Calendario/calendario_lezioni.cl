@@ -50,42 +50,22 @@ slot_CFU_corretti :- conteggio_slot(Corso, Conteggio), insegnamento(_, Corso, _,
 
 
 % Nella stessa aula, nello stesso momento, non vi può essere più di un docente
-:- slot(Giorno1, Aula1, Inizio1, Fine1, _, Semestre1, Docente1, _), slot(Giorno2, Aula2, Inizio2, Fine2, _, Semestre2, Docente2, _),
-    Giorno1 == Giorno2,
-    Aula1 == Aula2,
-    Inizio1 == Inizio2,
-    Fine1 == Fine2,
-    Semestre1 == Semestre2,
+:- slot(Giorno, Aula, Inizio, Fine, _, Semestre, Docente1, _), slot(Giorno, Aula, Inizio, Fine, _, Semestre, Docente2, _),
     Docente1 != Docente2.
 
 
 % Un docente non può essere, nello stesso momento, in più aule diverse
-:- slot(Giorno1, Aula1, Inizio1, Fine1, _, Semestre1, Docente1, _), slot(Giorno2, Aula2, Inizio2, Fine2, _, Semestre2, Docente2, _),
-    Giorno1 == Giorno2,
-    Inizio1 == Inizio2,
-    Fine1 == Fine2,
-    Semestre1 == Semestre2,
-    Docente1 == Docente2,
+:- slot(Giorno, Aula1, Inizio, Fine, _, Semestre, Docente, _), slot(Giorno, Aula2, Inizio, Fine, _, Semestre, Docente, _),
     Aula1 != Aula2.
 
 
 % Non possono esserci più corsi per la stessa aula nello stesso momento
-:- slot(Giorno1, Aula1, Inizio1, Fine1, Corso1, Semestre1, _, _), slot(Giorno2, Aula2, Inizio2, Fine2, Corso2, Semestre2, _, _),
-    Giorno1 == Giorno2,
-    Inizio1 == Inizio2,
-    Fine1 == Fine2,
-    Semestre1 == Semestre2,
-    Aula1 == Aula2,
+:- slot(Giorno, Aula, Inizio, Fine, Corso1, Semestre, _, _), slot(Giorno, Aula, Inizio, Fine, Corso2, Semestre, _, _),
     Corso1 != Corso2.
 
 
 % Lo stesso corso non può essere svolto in aule diverse nello stesso momento
-:- slot(Giorno1, Aula1, Inizio1, Fine1, Corso1, Semestre1, _, _), slot(Giorno2, Aula2, Inizio2, Fine2, Corso2, Semestre2, _, _),
-    Giorno1 == Giorno2,
-    Inizio1 == Inizio2,
-    Fine1 == Fine2,
-    Semestre1 == Semestre2,
-    Corso1 == Corso2,
+:- slot(Giorno, Aula1, Inizio, Fine, Corso, Semestre, _, _), slot(Giorno, Aula2, Inizio, Fine, Corso, Semestre, _, _),
     Aula1 != Aula2.
 
 
