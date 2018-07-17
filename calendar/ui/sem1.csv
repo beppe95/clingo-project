@@ -1,0 +1,26 @@
+"fisica | 2 | a
+reti | 3 | b
+cmro | 1 | c","cmro | 1 | a
+reti | 3 | b
+fisica | 2 | c","mdl | 1 | a
+logica | 3 | d
+fisica | 2 | e","inglese | 1 | e
+logica | 3 | f","inglese | 1 | a"
+"fisica | 2 | a
+reti | 3 | b
+cmro | 1 | c","lft | 2 | a
+inglese | 1 | b
+logica | 3 | c","statistica | 2 | a
+reti | 3 | f","reti | 3 | a
+cmro | 1 | d
+fisica | 2 | f","inglese | 1 | a"
+"lft | 2 | e","lft | 2 | a
+mdl | 1 | d","inglese | 1 | b","lft | 2 | f","statistica | 2 | e
+logica | 3 | f"
+"statistica | 2 | b
+inglese | 1 | c
+logica | 3 | f","logica | 3 | c","mdl | 1 | a
+lft | 2 | f","statistica | 2 | b
+mdl | 1 | c
+logica | 3 | f","fisica | 2 | c
+cmro | 1 | d"
