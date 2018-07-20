@@ -30,7 +30,7 @@ To model the problem we have been inspired by the model written in the **Artific
   <img src="https://raw.githubusercontent.com/lamba92/clingo-project/master/stuff/cargo.png"/>
 </p>
 
-## Authors
+## Author
 
 * **Cesare Iurlaro** - [CesareIurlaro](https://github.com/CesareIurlaro)
 * **Giuseppe Gabbia**  - [beppe95](https://github.com/beppe95)
