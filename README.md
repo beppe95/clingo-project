@@ -16,8 +16,16 @@ The folder `calendar\ui` contains a Kotlin JVM project that starting from a text
 </p>
 
 ## Cargo
+To solve this problem we used the `incremental ASP solving` approach, widely covered in Potassco User Guide and in the "Reasoning Web - Semantic Interoperability on the Web (2017)" book. 
+To use this approach is mandatory to include the `#include <incmode>` directive in your file.
 
-*TODO*
+Our code for the Cargo Planning Problem uses `#programm` directives to define the `base/0` subprogram which initializes and instantiates the prior knowledge base, the `step/1 (t)` subprogram which is the transition state model for each step `t > 0` and the `check/1 (t)` subprogram which checks state constraints and state goal for each step `t >= 0`.
+
+The atom `query (t)`, provided in the incremental mode, allows to incrementally query the knowledge base at each step; his value is TRUE only for the last step `t` and FALSE for all the other steps.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lamba92/clingo-project/master/stuff/cargo.png" max-width="50%" height="auto"/>
+</p
 
 ## Author
 
